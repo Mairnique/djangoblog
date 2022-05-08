@@ -1,4 +1,5 @@
 {% load static %}
+{% extends 'blog/base.html' %}
 
 <!DOCTYPE html>
 <html>
@@ -7,7 +8,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <header class="page-header">
         <div class="container">
@@ -18,6 +19,7 @@
     <main class="container">
         <div class="row">
             <div class="col">
+                {% block content %}
                 {% for post in posts %}
                     <article class="post">
                         <h2><a href="">{{ post.title }}</a></h2>
@@ -28,6 +30,7 @@
                         <br>
                     </article>
                 {% endfor %}
+                {% endblock %}
             </div>
         </div>
     </main>
