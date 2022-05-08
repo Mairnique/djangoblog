@@ -100,6 +100,13 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+#OAuth
+# AUTHENTICATION_BACKENDS = [
+#     'ion_oauth.oauth.IonOauth2',
+# ]
+
+# SOCIAL_AUTH_ION_KEY = I4gurYdYy0JStVpnRv5XuaVw4oAfqknpkuBFo8sY
+# SOCIAL_AUTH_ION_SECRET = dPD87XVtnlMB6GfMQXxvKdFYUNBJwViO4X8FI06PLUqzEj36smMeqp4HAyzXz4bQs9wvTA30Ln1Mi3BSZwoEAToxJ0x70vqdMEsYclxDl9nIyTIz0x0wbr9nCyPsYlHN
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
